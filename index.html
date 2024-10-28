@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuceese</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>SiempreActivos</title>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1>Mi propia web usando mi repositorio github</h1>
-</body>
+    <header>
+        <div class="logoTitulo">
+            <img src="images/casa.png" alt="logoCasa" class="logo">
+        </div>
+        <label class="titulo">Siempre Activos</label>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="content"> 
+        <div class="slideshow-container"> 
+            <div class="mySlides fade" style="display: block;">
+                <img src="images/viejos.png" alt="Caption Text">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/viejos2.jpg" alt="Caption Two">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
+        </div>
+
+        <div class="sidebar">
+            <div class="workshops">
+                <h2>Listado de Talleres</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Talleres</th>
+                            <th>Días</th>
+                            <th>Horario</th>
+                            <th>Centro</th>
+                            <th>Horas/Semana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gimnasia Aeróbica 1</td>
+                            <td>L/X</td>
+                            <td>9:00-10:00</td>
+                            <td>María de Vera</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Gimnasia Aeróbica 2</td>
+                            <td>L/X</td>
+                            <td>10:00-11:00</td>
+                            <td>María de Vera</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Gimnasia Aeróbica 3</td>
+                            <td>M/J</td>
+                            <td>9:00-10:00</td>
+                            <td>C/ Gutiérrez Soto</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="saludos">
+            <h2>Saludos del Alcalde</h2>
+            <p>Queridos vecinos:
+                Igual que vuestros nietos, iniciáis el curso con ganas de reencontraros con vuestros compañeros, con mucha 
+                ilusión por aprender tras el descanso de las vacaciones y con nuevas expectativas sobre lo que os deparará 
+                el nuevo año.
+                En realidad lo que estáis haciendo es renovar vuestras vidas con actividades que os enriquecen y con nuevos
+                focos de interés que compartís con vuestros conocidos y amigos.
+                Es lo que ha sido llamado “el envejecimiento activo” que todos (médicos, terapeutas y psicólogos) os recomiendan 
+                como garantía de salud física y psíquica: vivir más intensamente aprovechando cada momento para seguir mejorando y 
+                aprendiendo. Nuestro lema “Siempre Activos” se apoya en este idea y por eso pido vuestra implicación en las distintas 
+                actividades de ocio, deportivas y formativas que os proponemos. Junto a nuestra oferta habitual, fruto de vuestras 
+                peticiones este curso tenemos novedades como la creación de nuevos grupos de conversación en inglés, la ampliación 
+                horaria de las actividades de yoga y taichi, talleres de decoración, visitas guiadas por Madrid, un taller para mejorar 
+                los hábitos de sueño o una Escuela de Abuelos, entre otras.
+                Todas las actividades son gratuitas y complementarias de las que organiza la Asociación de Mayores de Boadilla a través 
+                de la subvención que anualmente les concedemos, tanto para ellas como para el Abono Transporte de los mayores.
+                Para concluir quiero solicitar especialmente la participación de todos aquellos que aún no están inscritos.
+                Os ánimo a hacerlo y os aseguro que no os arrepentiréis.
+                ¡Mucho ánimo, y a por el nuevo curso!</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section" id="news">
+            <h2>News</h2>
+            <p>Últimas noticias sobre nuestros talleres y actividades. Mantente informado sobre todas las novedades y eventos especiales.</p>
+            <ul>
+                <li>Nuevo taller de yoga comenzando la próxima semana.</li>
+                <li>Charlas sobre envejecimiento activo cada mes.</li>
+                <li>Visitas guiadas a museos locales programadas para el próximo trimestre.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Si tienes alguna pregunta o deseas más información, no dudes en contactarnos.</p>
+            <h3>Información de Contacto:</h3>
+            <p>Email: <a href="mailto:info@siempreactivos.com">info@siempreactivos.com</a></p>
+            <p>Teléfono: <a href="tel:+123456789">+12 345 6789</a></p>
+            <h3>Dirección:</h3>
+            <p>Calle Ejemplo, 123, Boadilla del Monte, Madrid</p>
+        </div>
+
+        <div class="section" id="about">
+            <h2>About</h2>
+            <p>Siempre Activos es una iniciativa dedicada a promover el envejecimiento activo y el bienestar de nuestros mayores.</p>
+            <p>Ofrecemos una variedad de talleres, actividades y recursos diseñados para fomentar la salud física y mental.</p>
+            <p>Nuestro objetivo es proporcionar un espacio donde nuestros participantes puedan socializar, aprender y disfrutar de nuevas experiencias.</p>
+        </div>
+    </div>
+
+
+    <div class="videoWrapper">
+      <iframe width="100%" height="600" src="https://www.youtube.com/embed/ZbKFpvhEvhw" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
+  
+  </body>
 </html>
