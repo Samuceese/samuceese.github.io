@@ -1,145 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamuceeseWeb</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <title>SiempreActivos</title>
-    <script src="js/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logoTitulo">
-            <img src="images/casa.png" alt="logoCasa" class="logo">
-        </div>
-        <label class="titulo">Siempre Activos</label>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </header>
 
-    <div class="content"> 
-        <div class="slideshow-container"> 
-            <div class="mySlides fade" style="display: block;">
-                <img src="images/viejos.png" alt="Caption Text">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/viejos2.jpg" alt="Caption Two">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)"><</a>
-            <a class="next" onclick="plusSlides(1)">></a>
-        </div>
-
-        <div class="sidebar">
-            <div class="workshops">
-                <h2>Listado de Talleres</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Talleres</th>
-                            <th>Días</th>
-                            <th>Horario</th>
-                            <th>Centro</th>
-                            <th>Horas/Semana</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Gimnasia Aeróbica 1</td>
-                            <td>L/X</td>
-                            <td>9:00-10:00</td>
-                            <td>María de Vera</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Gimnasia Aeróbica 2</td>
-                            <td>L/X</td>
-                            <td>10:00-11:00</td>
-                            <td>María de Vera</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Gimnasia Aeróbica 3</td>
-                            <td>M/J</td>
-                            <td>9:00-10:00</td>
-                            <td>C/ Gutiérrez Soto</td>
-                            <td>2</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <div class="saludos">
-            <h2>Saludos del Alcalde</h2>
-            <p>Queridos vecinos:
-                Igual que vuestros nietos, iniciáis el curso con ganas de reencontraros con vuestros compañeros, con mucha 
-                ilusión por aprender tras el descanso de las vacaciones y con nuevas expectativas sobre lo que os deparará 
-                el nuevo año.
-                En realidad lo que estáis haciendo es renovar vuestras vidas con actividades que os enriquecen y con nuevos
-                focos de interés que compartís con vuestros conocidos y amigos.
-                Es lo que ha sido llamado “el envejecimiento activo” que todos (médicos, terapeutas y psicólogos) os recomiendan 
-                como garantía de salud física y psíquica: vivir más intensamente aprovechando cada momento para seguir mejorando y 
-                aprendiendo. Nuestro lema “Siempre Activos” se apoya en este idea y por eso pido vuestra implicación en las distintas 
-                actividades de ocio, deportivas y formativas que os proponemos. Junto a nuestra oferta habitual, fruto de vuestras 
-                peticiones este curso tenemos novedades como la creación de nuevos grupos de conversación en inglés, la ampliación 
-                horaria de las actividades de yoga y taichi, talleres de decoración, visitas guiadas por Madrid, un taller para mejorar 
-                los hábitos de sueño o una Escuela de Abuelos, entre otras.
-                Todas las actividades son gratuitas y complementarias de las que organiza la Asociación de Mayores de Boadilla a través 
-                de la subvención que anualmente les concedemos, tanto para ellas como para el Abono Transporte de los mayores.
-                Para concluir quiero solicitar especialmente la participación de todos aquellos que aún no están inscritos.
-                Os ánimo a hacerlo y os aseguro que no os arrepentiréis.
-                ¡Mucho ánimo, y a por el nuevo curso!</p>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="section" id="news">
-            <h2>News</h2>
-            <p>Últimas noticias sobre nuestros talleres y actividades. Mantente informado sobre todas las novedades y eventos especiales.</p>
-            <ul>
-                <li>Nuevo taller de yoga comenzando la próxima semana.</li>
-                <li>Charlas sobre envejecimiento activo cada mes.</li>
-                <li>Visitas guiadas a museos locales programadas para el próximo trimestre.</li>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Samuceese</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             </ul>
         </div>
+    </nav>
 
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <p>Si tienes alguna pregunta o deseas más información, no dudes en contactarnos.</p>
-            <h3>Información de Contacto:</h3>
-            <p>Email: <a href="mailto:info@siempreactivos.com">info@siempreactivos.com</a></p>
-            <p>Teléfono: <a href="tel:+123456789">+12 345 6789</a></p>
-            <h3>Dirección:</h3>
-            <p>Calle Ejemplo, 123, Boadilla del Monte, Madrid</p>
+    <header class="header-bg text-center">
+        <img src="imagenes/avatar.jfif" class="rounded-circle mb-3" alt="Foto de Perfil" width="150">
+        <h1 class="animated-bounce">Hola, soy <span class="text-primary">Samuel Cortés Sánchez</span> 👋</h1>
+        <h2>Estudiante de segundo año en técnico de desarrollo de aplicaciones web 💻</h2>
+        <p>Soy un apasionado desarrollador Full Stack interesado en crear aplicaciones modernas y escalables.</p>
+    </header>
+
+    <section id="sobre-mi" class="container my-5 fade-in">
+        <h2 class="section-title">🚀 Sobre mí</h2>
+        <p>
+            Soy un estudiante <strong>Desarrollador Full Stack</strong> con un profundo interés en el desarrollo de aplicaciones modernas y escalables.
+            Mi objetivo es crear soluciones eficientes que no solo resuelvan problemas, sino que también ofrezcan una experiencia de usuario increíble.
+            Me encanta trabajar con tecnologías emergentes y aprender nuevas habilidades.
+        </p>
+    </section>
+
+    <section id="tecnologias" class="container my-5 fade-in">
+        <h2 class="section-title">🛠️ Tecnologías y Herramientas</h2>
+        <ul>
+            <li><strong>Frontend:</strong> JavaScript, HTML, CSS</li>
+            <li><strong>Backend:</strong> Kotlin, Java</li>
+            <li><strong>Bases de datos:</strong> MySQL, MongoDB, PostgreSQL</li>
+            <li><strong>DevOps:</strong> Docker</li>
+            <li><strong>Control de versiones:</strong> Git, GitHub</li>
+        </ul>
+    </section>
+
+    <section id="especialidades" class="container my-5 fade-in">
+        <h2 class="section-title">💡 Me especializo en:</h2>
+        <ul>
+            <li>Desarrollo de aplicaciones web</li>
+            <li>Integración de APIs REST</li>
+            <li>Diseño de bases de datos relacionales</li>
+        </ul>
+    </section>
+
+    <section id="proyectos" class="container my-5 fade-in">
+        <h2 class="section-title">🏆 Proyectos Destacados</h2>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">JYRS-Developers-Cine</h5>
+                <p class="card-text">Repositorio de mi proyecto en GitHub sobre desarrollo de cine: 
+                    <a href="https://github.com/Samuceese/JYRS-Developers-Cine">JYRS-Developers-Cine</a>
+                </p>
+            </div>
         </div>
+    </section>
 
-        <div class="section" id="about">
-            <h2>About</h2>
-            <p>Siempre Activos es una iniciativa dedicada a promover el envejecimiento activo y el bienestar de nuestros mayores.</p>
-            <p>Ofrecemos una variedad de talleres, actividades y recursos diseñados para fomentar la salud física y mental.</p>
-            <p>Nuestro objetivo es proporcionar un espacio donde nuestros participantes puedan socializar, aprender y disfrutar de nuevas experiencias.</p>
-        </div>
-    </div>
+    <section id="contacto" class="container text-center my-5 fade-in">
+        <h2 class="section-title">📫 Conéctate conmigo</h2>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com">...</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/samuceese">samuceese</a></p>
+        <p><strong>Correo:</strong> <a href="mailto:samuelcortessanchez@gmail.com">samuelcortessanchez@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> +637665079</p>
+    </section>
 
-
-    <div class="videoWrapper">
-      <iframe width="100%" height="600" src="https://www.youtube.com/embed/ZbKFpvhEvhw" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
-    </div>
-  
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/animations.js"></script>
+</body>
 </html>
